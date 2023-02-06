@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS FOLDER/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="w-50 m-auto p-5 shadow-lg">
+        <h1>CRUD System</h1>
+        <label for="">product Name</label>
+        <input type="text" class="form-control " name="" id="productName">
+
+        <div id="pNameValidate" class="alert alert-danger mt-1 d-none">
+            <p id="alert"></p>
+        </div>
+
+
+
+        <label for="">product Category</label>
+        <input type="text" name="" class="form-control " id="producCategory">
+
+
+
+        <label for="">produc Price</label>
+        <input type="text" name="" class="form-control" id="producPrice">
+
+
+
+        <label for="">product Description</label>
+        <textarea name="" class="form-control mb-3" id="productDescription"></textarea>
+
+
+        <button id="add" class="btn btn-outline-dark">Add product</button>
+        <button id="clear" class="btn btn-outline-dark">Clear</button>
+
+        <div id="alldata" class="alert d-none alert-danger">
+            <p>please write data in all fileds</p>
+        </div>
+
+    </div>
+
+    <input type="text" class="form-control my-5 w-50 m-auto " id="search" placeholder="search............">
+    <br>
+    <br>
+    <table class="table w-75 m-auto text-center table-striped">
+        <thead>
+            <th>index</th>
+            <th>name</th>
+            <th>category</th>
+            <th>price</th>
+            <th>description</th>
+            <th>delete</th>
+            <th>update</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="js/crud.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
